@@ -58,6 +58,8 @@ Route::group(['middleware'=>['auth:sanctum']],function(){
         return auth()->user();
     });
 
+    Route::post('/logout',[AuthController::class,'logout']);
+
     Route::resource('users',UserController::class)->only(['update','destroy']);
     Route::resource('autors',AutorController::class)->only(['store','update','destroy']);
     Route::resource('documents',DocumentController::class)->only(['store','update','destroy']);;
