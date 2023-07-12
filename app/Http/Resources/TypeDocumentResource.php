@@ -18,7 +18,7 @@ class TypeDocumentResource extends JsonResource
     {
         return[
             'id'=>$this->resource->id,
-            'naziv'=>$this->resource->naziv,
+            'naziv'=>$this->resource->title,
             'nivoTerminologije'=>$this->resource->nivoTerminologije,
         ];
     }
