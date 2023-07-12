@@ -23,8 +23,8 @@ class CreateDocumentsTable extends Migration
             $table->foreignId('typedocument_id');
             $table->timestamps();
             $table->foreign("typedocument_id")->references('id')->on('type_documents');
-            $table->foreign("autor_id")->references('id')->on('autor');
-            $table->foreign("system_id")->references('id')->on('sistemupravljanja');
+            $table->foreign("autor_id")->references('id')->on('autors');
+            $table->foreign("sistemupravljanja_id")->references('id')->on('sistem_upravljanja');
         });
     }
 

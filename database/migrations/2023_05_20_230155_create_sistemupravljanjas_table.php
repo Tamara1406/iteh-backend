@@ -13,7 +13,7 @@ class CreateSistemupravljanjasTable extends Migration
      */
     public function up()
     {
-        Schema::create('sistem_upravljanjas', function (Blueprint $table) {
+        Schema::create('sistem_upravljanja', function (Blueprint $table) {
             $table->id();
             $table->string('operativniSistem');
             $table->integer('maxDokumenata');
