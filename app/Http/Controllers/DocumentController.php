@@ -41,7 +41,7 @@ class DocumentController extends Controller
     {
         $validator = Validator::make($request->all(),[
             'naziv'=>'required|string|max:255',
-            'sadrzaj'=>'required|string|max:100',
+            'sadrzaj'=>'required|string|max:10000',
             'brojStrana'=>'required|integer|min:0',
             'autor_id'=>'required',
             'sistemupravljanja_id'=>'required',
@@ -104,7 +104,7 @@ class DocumentController extends Controller
     {
         $validator = Validator::make($request->all(),[
             'naziv'=>'required|string|max:255',
-            'sadrzaj'=>'required|string|max:100',
+            'sadrzaj'=>'required|string|max:10000',
             'brojStrana'=>'required|integer|min:0',
             'autor_id'=>'required',
             'sistemupravljanja_id'=>'required',
